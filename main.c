@@ -28,12 +28,14 @@ while(s[n] != 0) n++;
 
   for (i = 0; i<n; i++ )
   printf("Char[%d] '%c' \n",i, s[i]);
+   printf ("\nsizeof char s[] = %lu sizeof (char) = %lu\n\n\n", sizeof s, sizeof (char));
 printf( "\n");
  
  for (i = 0; i<n; i++ )
   printf("Char2[%d] '%c' \n",i, s[i*2]);
 printf( "\n\nmain3:\n");
- printf ("sizeof s = %lu,sizeof (int) = %lu\n", sizeof s, sizeof (int));
+
+ 
   free (description);
 return 0;
 }
@@ -43,7 +45,7 @@ void array2(int arr[], int size2)
 {
     int q;
     for (q=0; q < size2; q++)
-    printf("Array2[%d] '%c' \n",q, arr[q]);
+    printf("Array2[%d] '%d' \n",q, arr[q]);
     printf("\n");
 }
 
@@ -60,7 +62,7 @@ int main3(void)
  //The size of the block allocated is equal to the number of bytes for a single object of type int multiplied by 10, providing space for ten integers.
  
  //array1 length in bytes
- printf ("sizeof array1 = %lu,sizeof (int) = %lu\n", sizeof array1, sizeof (int));
+ printf ("sizeof array1 = %lu sizeof (int) = %lu\n", sizeof array1, sizeof (int));
  //char *scopy[]=  &s[];
 
 
