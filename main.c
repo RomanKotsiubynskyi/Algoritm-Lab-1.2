@@ -5,15 +5,16 @@
 #include <string.h>
  
  int main2(void);
- int main3(void);
+ int arrayNum(void);
+ int arrayAfterMod(void);
 //dynamic malloc 2
 int main(void) {
  
   main2();
- 
-  main3();
+  arrayNum();
+arrayAfterMod();
 }
-
+//////////////////////////////////////////////////////////////////////////
 int main2(void)
 {
   char s[]="3scc";
@@ -31,16 +32,11 @@ while(s[n] != 0) n++;
    printf ("\nsizeof char s[] = %lu sizeof (char) = %lu\n\n\n", sizeof s, sizeof (char));
 printf( "\n");
  
- for (i = 0; i<n; i++ )
-  printf("Char2[%d] '%c' \n",i, s[i*2]);
-printf( "\n\nmain3:\n");
-
- 
   free (description);
 return 0;
 }
 
-
+///////////////////////////////////////////////////////////////////////////////
 void array2(int arr[], int size2)
 {
     int q;
@@ -49,9 +45,10 @@ void array2(int arr[], int size2)
     printf("\n");
 }
 
-int main3(void)
+int arrayNum(void)
 {
   int array1[]={1,2,3,4,5,6,7};
+  /*вычисление количества элементов массива*/
    int size2 = sizeof(array1)/sizeof(array1[0]);
 
     printf("Opening Numbers array: \n");
@@ -67,6 +64,21 @@ int main3(void)
 
 
   free (description);
+ 
 return 0;
+ 
 }
-//dynamic malloc 3
+////////////////////////////////////////
+int arrayAfterMod(void)
+{
+  int array3[112];
+  int j,N,i;
+for(j = 0; j < N; j++)
+      {
+      AdditionalDiagonalcharray[i][j] = Initialcharray[N - 1 - j][N - 1 - i];
+      printf("AdditionalDiagonalcharray [%i][%i] = %c\n", i, j, AdditionalDiagonalcharray[i][j]);
+      }
+
+return 0;
+    
+}
