@@ -51,7 +51,7 @@ void array2(int arr[], int size2)
 
 int main3(void)
 {
-  int array1[]={1,3,4,5,0,4,4};
+  int array1[]={1,2,3,4,5,6,7};
    int size2 = sizeof(array1)/sizeof(array1[0]);
 
     printf("Opening Numbers array: \n");
