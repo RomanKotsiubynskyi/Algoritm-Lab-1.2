@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+#include <malloc.h>
+#include <stdlib.h>
+
+int main(void) {
+int  mass[20] = {1,2,3};
+double i= 234.45;
+
+//инициализация указателя:
+double *pi = &i;//с помощью операции получения адреса
+double *r = pi;// с помощью проинициализированного указателя
+int *N = NULL;// присваивание пустого значения
+
+//Операция разыменования
+int i3 = 0;
+const int i2 = 110;
+const int* R = &i2;
+i3 = *R;
+//Инкремент увеличивает значение указателя на величину sizeof(тип).
+char w = ' ';
+char *wuk = & w;
+wuk++;
+
+//i = 0; //Запомнить номер первого элемента массива
+int b = mass[0];//Запомнить значение первого элемента
+//http://window.edu.ru/catalog/pdf2txt/279/69279/44008?p_page=1
+
+char list[] = "list";
+
+printf("%.2f %d   %c\n", *r, *R,  *wuk);
+printf ("%c\n",list[2]);
+return 0;
+}

@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+#include <malloc.h>
+#include <stdlib.h>
+
+int main(void) {
+
+int t,i, mass[5][5];
+/* загрузка чисел*/ 
+for(t=0; t<3; ++t)
+for (i=0; i<4; ++i)
+mass[t][i] = (t*2)+i;
+
+/*
+mass[0][0] = 5;
+mass[0][1] = 7;
+mass[1][0] = 8;
+mass[2][0] = 88;
+mass[2][2] = 888;
+*/
+
+/* вывод чисел */
+for (t=0; t<3; ++t)
+{
+for (i=0; i<4; ++i)
+printf("%d  ",mass[t][i]);
+printf ("\n");
+}
+return 0;
+}
