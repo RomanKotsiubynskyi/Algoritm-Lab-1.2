@@ -6,13 +6,13 @@
  
  int main2(void);
  int arrayNum(void);
- int arrayAfterMod(void);
+
 //dynamic malloc 2
 int main(void) {
  
   main2();
   arrayNum();
-arrayAfterMod();
+
 }
 //////////////////////////////////////////////////////////////////////////
 int main2(void)
@@ -55,30 +55,25 @@ int arrayNum(void)
     array2(array1, size2);
 
  //int  *description = malloc(10*sizeof(int )); //An equivalent syntax
-  int  *description = malloc(10*sizeof*description);
+  int  *description = malloc(size2*sizeof*description);
  //The size of the block allocated is equal to the number of bytes for a single object of type int multiplied by 10, providing space for ten integers.
  
  //array1 length in bytes
- printf ("sizeof array1 = %lu sizeof (int) = %lu\n", sizeof array1, sizeof (int));
+ printf ("sizeof array1 = %lu sizeof (int) = %lu\n\n", sizeof array1, sizeof (int));
  //char *scopy[]=  &s[];
-
-
-  free (description);
  
+  int j;
+  int AdditionalDiagonalcharray[j];
+
+for(j = 0; j < size2; j++)
+      {
+      AdditionalDiagonalcharray[0] = array1[0+1];
+      printf("AdditionalDiagonalcharray [%i] = %c\n", j, AdditionalDiagonalcharray[j]);
+      }
 return 0;
- 
+ free (description);
 }
 ////////////////////////////////////////
-int arrayAfterMod(void)
-{
-  int array3[112];
-  int j,N,i;
-for(j = 0; j < N; j++)
-      {
-      AdditionalDiagonalcharray[i][j] = Initialcharray[N - 1 - j][N - 1 - i];
-      printf("AdditionalDiagonalcharray [%i][%i] = %c\n", i, j, AdditionalDiagonalcharray[i][j]);
-      }
 
-return 0;
-    
-}
+
+
